@@ -24,8 +24,8 @@
  (vec
    (rest
     (let [now (Instant/now)
-          step 300
-          duration 3000]
+          step (* 17 60)
+          duration (* 17 60 247)]
       (for [x (range 0 duration step)]
         (.plusSeconds now x))))))
  
